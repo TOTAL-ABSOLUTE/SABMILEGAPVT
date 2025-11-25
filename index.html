@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nevbar">
+            <div class="nev-logo">
+                <div class="logo">
+                </div>
+            </div>
+            <div class="nev-secrch">
+                <div class="nev-srch">
+                    <select class="search-select">
+                        <option>All</option>
+                    </select>
+                    <input placeholder="Search" class="search-input">
+                </div>   
+            </div>
+            <div class="nev-location">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <div class="main-content-img">
+                <img src="images/nxtwave.png" alt="Sample Image">
+            </div>
+            <div class="main-content-nxtwave">
+                <div class="nxtwave-content" onclick="toggleSem('sem1')"><p>SEM-1</p></div>
+                <div class="nxtwave-content" onclick="toggleSem('sem2')"><p>SEM-2</p></div>
+                <div class="nxtwave-content" onclick="toggleSem('sem3')"><p>SEM-3</p></div>
+                <div class="nxtwave-content" onclick="toggleSem('sem4')"><p>SEM-4</p></div>
+                <div class="nxtwave-content" onclick="toggleSem('sem5')"><p>SEM-5</p></div>
+                <div class="nxtwave-content" onclick="toggleSem('sem6')"><p>SEM-6</p></div>
+            </div>
+            <div id="sem-container">
+                <div id="sem1" class="sem-details">
+                    <div class="sem1-python sem-box" onclick="location.href='html-pages/python-sem1.html'">python-sem1</div>
+                    <div class="sem1-web-dev sem-box" onclick="location.href='html-pages/web-dev-sem1.html'">Web Development-sem1</div>
+                    <div class="sem1-math sem-box" onclick="location.href='html-pages/math-sem1.html'">Mathematics-sem1</div>
+                    <div class="sem1-physics sem-box" onclick="location.href='html-pages/physics-sem1.html'">Physics-sem1</div>
+                </div>
+                <div id="sem2" class="sem-details">
+                    <div class="sem2-python sem-box">python-sem2</div>
+                    <div class="sem2-web-dev sem-box">Web Development-sem2</div>
+                    <div class="sem2-math sem-box">Mathematics-sem2</div>
+                    <div class="sem2-physics sem-box">Physics-sem2</div>
+                </div>
+                <div id="sem3" class="sem-details">
+                    <div class="sem3-python sem-box">python-sem3</div>
+                    <div class="sem3-web-dev sem-box">Web Development-sem3</div>
+                    <div class="sem3-math sem-box">Mathematics-sem3</div>
+                    <div class="sem3-physics sem-box">Physics-sem3</div>
+                </div>
+                <div id="sem4" class="sem-details">
+                    <div class="sem4-os sem-box">Operating Systems-sem4</div>
+                    <div class="sem4-cn sem-box">Computer Networks-sem4</div>
+                    <div class="sem4-micro sem-box">Microprocessors-sem4</div>
+                </div>
+                <div id="sem5" class="sem-details">
+                    <div class="sem5-ml sem-box">Machine Learning-sem5</div>
+                    <div class="sem5-web-tech sem-box">Web Technologies-sem5</div>
+                    <div class="sem5-se sem-box">Software Engineering-sem5</div>
+                </div>
+                <div id="sem6" class="sem-details">
+                    <div class="sem6-ai sem-box">AI-sem6</div>
+                    <div class="sem6-cloud sem-box">Cloud Computing-sem6</div>
+                    <div class="sem6-project sem-box">Project Work-sem6</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
