@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    border: 0;
+    box-sizing: border-box;
 }
 
 .nevbar{
@@ -169,3 +169,107 @@ margin: 5px;
     color: #22223B;
     font-family: cursive;
 }
+
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .demo-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 24px;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            padding: 50px 20px 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+
+        .footer-about p {
+            color: #bdc3c7;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #34495e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: #3498db;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #3498db;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #34495e;
+            padding-top: 20px;
+            text-align: center;
+            color: #95a5a6;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
